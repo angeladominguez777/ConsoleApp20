@@ -29,7 +29,7 @@ namespace ConsoleApp20
         {
             listaalumnos.Add(new Alumno(l.Nombre = nombre, l.Edad = edad, l.Matricula = matricula));
         }
-
+        //cambios
      
         public List<Alumno> Consultar()
         { 
