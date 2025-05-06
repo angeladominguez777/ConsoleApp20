@@ -38,6 +38,15 @@ namespace ConsoleApp20
                         acciones.Agregar(matricula, nombre, edad);
                         break;
                         case Menu.Actualizar:
+                        Console.WriteLine("Dame matricula actualizar: ");
+                        int matriculaactualizar = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("dame  nombre: ");
+                        string nombreactualizar = Console.ReadLine();
+                        Console.WriteLine("dame  edad: ");
+                        int edadactualizar = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Dame matricula: ");
+                        int matricula2 = Convert.ToInt32(Console.ReadLine());
+                        acciones.Actualizar(matricula2, matriculaactualizar, nombreactualizar, edadactualizar);
                         break;
                         case Menu.Eliminar:
                         Console.WriteLine("Dame matricula a eliminar");

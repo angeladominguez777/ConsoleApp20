@@ -13,9 +13,16 @@ namespace ConsoleApp20
         {new Alumno("Angela",20,113149)
         };
 
-        public void Actualizar(int matricula, string nombre, int edad)
+        public void Actualizar(int matricula2, int matriculaactualizar, string nombreactualizar, int edadactualizar)
         {
-            throw new NotImplementedException();
+            var objetliminar = listaalumnos.Find(x => x.Matricula == matriculaactualizar);
+
+
+            if (objetliminar != null)
+            {
+                listaalumnos.Remove(objetliminar);
+                listaalumnos.Add(new Alumno(l.Nombre = nombreactualizar, l.Edad = edadactualizar, l.Matricula = matriculaactualizar));
+            }
         }
 
         public void Agregar(int matricula, string nombre, int edad)
@@ -40,6 +47,11 @@ namespace ConsoleApp20
         }
 
         public void ExportarExcel()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Actualizar(int matricula, string nombre, int edad)
         {
             throw new NotImplementedException();
         }
